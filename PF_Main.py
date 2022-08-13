@@ -1,5 +1,5 @@
 import csv
-#import file
+#import File_Name
 month = "Imported month Name"
 
 file = f"name_{month}.scv"
@@ -13,8 +13,8 @@ with open(file, mode="r") as csv_file:
         name = row[1]
         amount = float(row[2])
         transaction = ((date, name, amount))
-        print()
-        transactions.append(transaction)
+        print(transaction)
+        transactions.add(transaction)
 
-#sa = FileName.service_account()
+#sa = File_Name.service_account()
 #sh = sa.open("")
